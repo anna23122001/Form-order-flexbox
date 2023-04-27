@@ -8,56 +8,53 @@
     <title>Form with Flexbox</title>
 </head>
 <body>
-<div class="main-wrapper">
+<div class="main-cont">
     <header>
         <h1>CREATE AN ACCOUNT</h1>
-        <h2>We always keep your name and email address private.</h2>
+        <h5>We always keep your name and email address private.</h5>
      </header>
     <main> 
     <form>
-        <div class="container1">
-                <div> 
+        <div id="form-cont">
+            <div id="outer-input-cont">
+                <div class="inner-input-cont"> 
                     <input type="text" id="name" name="name" placeholder="First name"> 
-                </div>
-                <div> 
                     <input type="text" id="last-name" name="last-name" placeholder="Last name"> 
                 </div>
-                <div>
+                
+                <div class="inner-input-cont">
                     <input type="text" id="dname" name="dname" placeholder="Display name">
-                </div>
-                <div>
                     <input type="email" id="email" placeholder="Email Address"> 
                 </div>
-                <div> 
+                <div class="inner-input-cont"> 
                     <input type="password" id="pass" name="password" placeholder="Password"> 
-                </div>
-                <div> 
                     <input type="password" id="pass-confirm" name="password" placeholder="Password Confirmation"> 
                 </div>
-        </div>
-    <div class="radio-container">
-        <div class="radio-item">
-                <div class="radio-item-one">
+            </div>
+
+        <div id="radio-cont">
+            <div class="radio-wrapper">
+                <div class="radio-inner">
                      <input type="radio" id="buyer" name="visitor"> 
                     <label for="buyer">Join As a Buyer</label>
-                </div>
-                                            
+                </div>                        
                     <p>I am looking for a Name, Logo for my business, brand or product</p>
-        </div>
-        <div class="radio-item">
-                <div class="radio-item-one">
+            </div>
+            <div class="radio-wrapper">
+                <div class="radio-inner">
                         <input type="radio" id="seller" name="visitor">
                         <label for="seller">Join As a Creative or Marketplace Seller</label> 
-                </div>
-                                         
-                        <p>I plan to submit name ideas, Logodesigns or sell names</p>
+                </div>                       
+                    <p>I plan to submit name ideas, Logodesigns or sell names</p>
         </div>
-        <div id="checkbox-wrapper">
-            <input type="checkbox" id="allow"> <label for="allow">Allow Squadhelp to send marketing/promotional offers from time to time</label> </div>
+        <div class="check-cont">
+            <input type="checkbox" id="allow"> 
+            <label for="allow">Allow Squadhelp to send marketing/promotional offers from time to time</label> </div>
         </div>
-        <div> 
+         <div > 
             <button type="submit">Create account</button> 
             </div>
+    </div>
     </form>
 </main>
 </div>

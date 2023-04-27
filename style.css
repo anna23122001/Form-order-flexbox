@@ -4,71 +4,93 @@
 }
 *{
     box-sizing: border-box;
+    margin: 8px auto;
 }
 :root{
     font-size: 20px;
     font-family: Open Sans, italic;
+    color: white;
 }
-.main-wrapper{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
+
+
+header{
+    width: 100%;
+    max-height: 100px ;
+}
+h1, h5{
     text-align: center;
+}
+.main-cont{
+    border: 1px solid black;
+    max-width: 600px;
+    height: 800px;
     background-color: DeepSkyBlue;
-    max-width: 32%;
-    min-height: 700px;
-    margin: auto;
-}
-h1{
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    word-spacing: 10px;
-    letter-spacing: 2px;
-}
-h2{
-    font-size: 20px;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 400;
-}
-.container1{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    max-height: 250px; 
+border: none;
 }
-input[type='text'],
-input[type='email'],
-input[type='password'] {
-	width: 250px;
-    min-height:60px;
+form{
+    width: 100%;
+    height: 100%;
+}
+#form-cont{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+#outer-input-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.inner-input-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    max-width: 80%;
+    min-width: 250px;
+    height: 60px;
+    margin: 5px 10px;
     text-align: center;
-    font-size: 15px;
-    margin: 10px;
-    border: none;
     border-radius: 5px;
+    border: none;
+    font-size: 15px;
 }
-.radio-container{
-    text-align: left;
-    color: white;
+#radio-cont{
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-wrapper{
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    margin: 15px 20px;
+    border: 1px solid;
 }
-.radio-item{
-    border: 1px solid white;
-    margin: 15px 20px 15px 20px;
-    padding-left: 30px;
+.radio-inner{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input[type="radio"]{
+    margin-right: 20px;
+}
+p{
+    display: inline-block;
     font-size: 15px;
+    margin-left: 35px;
+    margin-top: 0px;
 }
-.radio-item-one{
-    font-size: 20px;
-    margin-top: 10px;
-}
-#checkbox-wrapper{
+.check-cont{
     font-size: 15px;
     text-align: center;
 }
@@ -76,9 +98,9 @@ button[type="submit"]{
     background-color: Turquoise;
     font-size: 20px;
     color: white;
-    height: 70px;
-    min-width: 500px;
+    height: 60px;
+    min-width: 550px;
     border: none;
-    margin: 20px;
-    border-radius: 5px;
-}
+    margin: 25px 0 35px 0;
+    border-radius: 5px;}
+
